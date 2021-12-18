@@ -50,30 +50,48 @@ main {
     align-items: center;
     justify-content: center;
 }
-.container{
+.container-title{
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+.review{
     width:550px;
+    padding:1rem;
     background-color: white;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    text-align:center;
+}
+#job{
+    color:gray;
 }
 #person-img{
+    display: block;
+    margin: 0 auto;
     width:200px;
     height:200px;
     border-radius: 100%;
 }
 
-
-
-
-
-
-
-
+.random-btn{
+    padding:0.4rem;
+    transition: 0.5s;
+}
+.btn{
+    margin-top: 1rem;
+    background-color: white;
+    border:none;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: var(--color-blue);
+    color: white;
+}
 
 /* Responsiveness */
 @media (max-width:620px) {
-    .container{
-        width:440px;
-        
+    .review{
+        width:440px;    
     }
     #person-img{
         width: 150px;
