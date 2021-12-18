@@ -35,6 +35,7 @@ ul {
 /*=======Nav-bar=======*/
 header{
     background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .logo{
     font-family: 'Dancing Script', cursive;
@@ -44,7 +45,7 @@ header{
 
 /*==========Main Content==========*/
 main {
-    height: 85vh;
+    height: 100vh;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
@@ -52,15 +53,17 @@ main {
 }
 .container-title{
     text-align: center;
-    margin: 1rem;
     font-size: 1.5rem;
     color:gray;
+}
+.container-title>h2{
+    padding-bottom:1.6rem;
 }
 .review{
     width:550px;
     padding:1rem;
     background-color: white;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     text-align:center;
 }
 #author{
@@ -84,14 +87,15 @@ main {
 .random-btn{
     padding:0.4rem;
     transition: 0.5s;
+    font-size: 1.2rem;
 }
 .btn{
-    margin-top: 1rem;
+    margin: 0.5rem;
     background-color: white;
     border:none;
     transition: 0.5s;
 }
-button:hover{
+.random-btn:hover{
     background-color: var(--color-blue);
     color: white;
 }
@@ -99,11 +103,11 @@ button:hover{
 /* Responsiveness */
 @media (max-width:620px) {
     .review{
-        width:440px;    
+        width:400px;    
     }
     #person-img{
-        width: 150px;
-        height:150px;
+        width: 120px;
+        height:120px;
     }
 }
 
@@ -113,6 +117,7 @@ footer{
     text-align: center;
     font-size: 1.6rem;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .social-links{
     display: flex;
