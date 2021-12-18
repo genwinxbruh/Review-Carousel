@@ -1,0 +1,98 @@
+/*===========Font============*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+/*======Variable======*/
+:root{
+    --color-blue:#5B54FA;
+}
+/*=============Global Styles=============*/
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4;
+    font-size: 18px;
+    background-color: rgb(240, 232, 232);
+    transition: all 0.3s linear;
+}
+ul {
+    list-style-type: none;
+}
+
+
+
+
+/*=======Nav-bar=======*/
+header{
+    background-color:white;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.6rem;
+    padding-left: 1rem;
+}
+
+/*==========Main Content==========*/
+main {
+    height: 85vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width:550px;
+    background-color: white;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+}
+#person-img{
+    width:200px;
+    height:200px;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
+@media (max-width:620px) {
+    .container{
+        width:440px;
+        
+    }
+    #person-img{
+        width: 150px;
+        height:150px;
+    }
+}
+
+/*==========Footer==========*/
+footer{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: white;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links li{
+    padding: 0.5rem;
+}
