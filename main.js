@@ -41,7 +41,6 @@ const prevBtn = document.querySelector(".prev-button");
 const nextBtn = document.querySelector(".next-button");
 const randomBtn = document.querySelector(".random-btn");
 
-
 let currentItem = 0;
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -56,26 +55,24 @@ function showPerson(person) {
     info.textContent = item.text;
 };
 
-nextBtn.addEventListener('click', function() {
+nextBtn.addEventListener('click', function() {    
     currentItem++;
+    if (currentItem>3) {
+        currentItem = 0;
+    }
     showPerson(currentItem);
 });
 
+prevBtn.addEventListener('click', function() {
+    currentItem--;
+    if (currentItem<0) {
+        currentItem = reviews.length-1;
+    }
+    showPerson(currentItem);
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+randomBtn.addEventListener('click', function() {
+    currentItem = Math.floor(Math.random()*reviews.length);
+    console.log(currentItem);
+    showPerson(currentItem);
+});
